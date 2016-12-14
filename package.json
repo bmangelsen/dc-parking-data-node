@@ -1,0 +1,19 @@
+{
+  "name": "dc-parking-data-node",
+  "version": "1.0.0",
+  "description": "Let us use ruby to explore data provided by http://opendata.dc.gov/ to answers a few of the following questions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmangelsen/dc-parking-data-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmangelsen/dc-parking-data-node/issues"
+  },
+  "homepage": "https://github.com/bmangelsen/dc-parking-data-node#readme"
+}
