@@ -1,5 +1,6 @@
 var countRows = require('./row_count');
 var countTicketTypes = require('./ticket_types');
+var mostCommonType = require('./most_common_type');
 
 console.log("How many parking tickets were issued?");
 
@@ -12,13 +13,10 @@ require('./parser')('./simple_data/parking_feb_2016.csv', function(err, theData)
 
   countTicketTypes(parsedData, function(err, countedTicketTypes) {
     console.log(countedTicketTypes);
+
+    mostCommonType(countedTicketTypes, function(err, mostCommonType) {
+      console.log(mostCommonType);
+    });
   });
 
 });
-
-
-
-// console.log("How many different types of parking tickets were issued?");
-// countTicketTypes('./simple_data/parking_feb_2016.csv', function (err, theData) {
-//   console.log(theData);
-// });
